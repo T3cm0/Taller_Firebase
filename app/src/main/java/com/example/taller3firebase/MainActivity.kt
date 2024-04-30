@@ -20,10 +20,8 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         val tuBoton: Button = findViewById(R.id.Login)
         val tuBoton1: Button = findViewById(R.id.Singup)
-
         tuBoton.setOnClickListener {
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
@@ -34,4 +32,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
 }

@@ -37,6 +37,7 @@ android {
 }
 
 dependencies {
+
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
     implementation("com.google.firebase:firebase-analytics-ktx")
     implementation(platform("com.google.firebase:firebase-bom:32.8.0"))
@@ -50,4 +51,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation ("org.osmdroid:osmdroid-android:6.1.18")
+    implementation ("com.github.MKergall:osmbonuspack:6.9.0")
+    implementation ("com.squareup.okhttp3:okhttp:3.2.0")
+
 }
